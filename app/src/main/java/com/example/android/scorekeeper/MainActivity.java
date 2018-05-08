@@ -58,14 +58,14 @@ public class MainActivity extends AppCompatActivity {
         teamTwoGoalsView.setText(String.valueOf(teamTwoScores));
     }
 
-    /** Displays the number of faults for Team One **/
+    /** Displays the number of faults for Team Two **/
 
     public void displayFaultsForTeamTwo(int score){
         TextView teamOneFaultsView = (TextView) findViewById(R.id.teamTwoFaults);
         teamOneFaultsView.setText(String.valueOf(teamTwoFaults));
     }
 
-    /** Adds one goal to Team One score **/
+    /** Adds one goal to Team Two score **/
 
     public void addingGoalTeamTwo(View v) {
         teamTwoScores = teamTwoScores + 1;
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /** Adds one fault to Team One number of faults **/
+    /** Adds one fault to Team Two number of faults **/
 
     public void addingFaultTeamTwo(View v) {
         teamTwoFaults = teamTwoFaults + 1;
