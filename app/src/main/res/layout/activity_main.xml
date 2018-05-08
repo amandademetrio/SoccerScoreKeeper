@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/soccer_grass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_one"
+                android:layout_gravity="center"
+                android:textSize="40sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_goals"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_one_score"
+                android:layout_gravity="center"
+                android:textSize="60sp"
+                android:textColor="@color/white"
+                android:id="@+id/teamOneScore"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_faults"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_one_faults"
+                android:layout_gravity="center"
+                android:textSize="60sp"
+                android:textColor="@color/white"
+                android:id="@+id/teamOneFaults"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_goal_statement"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:onClick="addingGoalTeamOne"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_fault_statement"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:onClick="addingFaultTeamOne"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_two"
+                android:layout_gravity="center"
+                android:textSize="40sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_goals"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_two_score"
+                android:layout_gravity="center"
+                android:textSize="60sp"
+                android:textColor="@color/white"
+                android:id="@+id/teamTwoScore"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_faults"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_two_faults"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="60sp"
+                android:id="@+id/teamTwoFaults"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_goal_statement"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:onClick="addingGoalTeamTwo"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_fault_statement"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:onClick="addingFaultTeamTwo"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_game_statement"
+        android:layout_gravity="center"
+        android:onClick="endingGame"/>
+
+</LinearLayout>
